@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ArinWhois, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ArinWhois-VS2015.20160115.1\lib\net45\ArinWhois.dll</HintPath>
+      <HintPath>..\packages\ArinWhois-VS2015.20160118.1\lib\net45\ArinWhois.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="IPAddressRange, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -55,7 +55,7 @@
     <Reference Include="System" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="WhoisClient, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WhoisClient-VS2015.20160118.5\lib\net40\WhoisClient.dll</HintPath>
+      <HintPath>..\packages\WhoisClient-VS2015.20160118.6\lib\net40\WhoisClient.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
