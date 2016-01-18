@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WhoisGenie.NET
 {
-    public class Class1
+    public class WhoisGenie
     {
     }
 }
