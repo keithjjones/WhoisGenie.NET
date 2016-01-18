@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WhoisGenie.NET</id>
+    <version>20160118.1</version>
+    <title>WhoisGenie.NET</title>
+    <authors>Keith J. Jones</authors>
+    <owners>Keith J. Jones</owners>
+    <licenseUrl>https://github.com/keithjjones/WhoisGenie.NET/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/keithjjones/WhoisGenie.NET</projectUrl>
+	<!--
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+	-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This C# library provides access to ARIN RESTful Whois lookups, plus recursive raw lookups.</description>
+    <releaseNotes>
+	20160118.1 - First version of this package.
+	Package created in Jan 18, 2016, Iteration #1
+	</releaseNotes>
+    <copyright>Copyright 2016, Keith J. Jones</copyright>
+    <tags>whois genie arin recursive</tags>
+  </metadata>
+</package>
