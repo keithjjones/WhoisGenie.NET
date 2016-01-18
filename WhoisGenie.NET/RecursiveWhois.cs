@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ArinWhois;
 
 namespace WhoisGenie.NET
 {
-    public class ARINResponse : ArinWhois.Model.Response
+    public class RecursiveWhois : Whois.NET.WhoisResponse
     {
-        // Forward this model to the user of this library.s
+        // Forward this model to the user of this library.
     }
 }
