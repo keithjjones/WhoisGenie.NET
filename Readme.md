@@ -44,6 +44,8 @@ Console.WriteLine("{0}", result.Network.OrgRef.Name);
 ...
 ```
 
+Be sure nuget.exe is in your path for building release.
+
 # Contributors
 
 * [KeithJJones] (https://github.com/keithjjones) (Keith J. Jones)

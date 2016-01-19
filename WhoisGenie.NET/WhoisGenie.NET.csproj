@@ -28,10 +28,11 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\WhoisGenie.NET.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ArinWhois, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ArinWhois-VS2015.20160119.2\lib\net45\ArinWhois.dll</HintPath>
+      <HintPath>..\packages\ArinWhois-VS2015.20160119.4\lib\net45\ArinWhois.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="IPAddressRange, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -56,7 +57,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="WhoisClient, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WhoisClient-VS2015.20160119.1\lib\net40\WhoisClient.dll</HintPath>
+      <HintPath>..\packages\WhoisClient-VS2015.20160119.2\lib\net40\WhoisClient.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -71,6 +72,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Release" goto PACK
+goto END
+:PACK
+pushd "$(ProjectDir)"
+nuget.exe pack "$(ProjectFileName)" -Prop Configuration=Release;Platform=AnyCPU -o $(SolutionDir)nuget\
+:END</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
