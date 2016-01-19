@@ -7,6 +7,9 @@ using ArinWhois;
 
 namespace WhoisGenie.NET
 {
+    /// <summary>
+    /// A class containing the response from an ARIN whois lookup.
+    /// </summary>
     public class ARINWhois : ArinWhois.Model.Response
     {
         // Forward this model to the user of this library.

@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ArinWhois, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ArinWhois-VS2015.20160119.1\lib\net45\ArinWhois.dll</HintPath>
+      <HintPath>..\packages\ArinWhois-VS2015.20160119.2\lib\net45\ArinWhois.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="IPAddressRange, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">

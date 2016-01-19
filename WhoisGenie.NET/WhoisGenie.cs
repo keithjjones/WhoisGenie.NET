@@ -9,6 +9,9 @@ using System.Net;
 
 namespace WhoisGenie.NET
 {
+    /// <summary>
+    /// A class containing the operations for whois lookups.
+    /// </summary>
     public class WhoisGenie
     {
         /// <summary>
