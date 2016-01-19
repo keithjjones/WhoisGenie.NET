@@ -11,6 +11,11 @@ namespace WhoisGenie.NET
 {
     public class WhoisGenie
     {
+        /// <summary>
+        /// Uses the ARIN Whois facility to collect whois information into a structure.
+        /// </summary>
+        /// <param name="LookupIP">The IP address to be queried.</param>
+        /// <returns>ARINWhois structure contains the results of the queries.</returns>
         static public ARINWhois GetARINWhois(IPAddress LookupIP)
         {
             // Setup variables
@@ -71,6 +76,11 @@ namespace WhoisGenie.NET
             return myARINResponse;
         }
 
+        /// <summary>
+        /// Uses recursion to retrieve whois data for an IP address or domain.
+        /// </summary>
+        /// <param name="WhoisQuery">The domain or IP address to be queried.</param>
+        /// <returns>The structure containing the whois lookup content.</returns>
         static public RecursiveWhois GetRecursiveWhois(string WhoisQuery)
         {
             RecursiveWhois returnwhois = new RecursiveWhois();
