@@ -25,6 +25,8 @@ namespace WhoisGenie.NET
             ArinWhois.Client.ArinClient myArinClient;
             ARINWhois myARINResponse = new ARINWhois();
 
+            // We will copy portions of this structure based upon
+            // several lookups.
             myArinClient = new ArinWhois.Client.ArinClient();
 
             // Get IP Info
@@ -99,10 +101,7 @@ namespace WhoisGenie.NET
                 return returnwhois;
             }
 
-            returnwhois.AddressRange = whois.AddressRange;
-            returnwhois.OrganizationName = whois.OrganizationName;
-            returnwhois.RespondedServers = whois.RespondedServers;
-            returnwhois.Raw = whois.Raw;
+            returnwhois.Copy(whois);
 
             return returnwhois;
         }
