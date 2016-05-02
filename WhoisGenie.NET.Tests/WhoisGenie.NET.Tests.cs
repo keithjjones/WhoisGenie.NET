@@ -130,7 +130,7 @@ namespace WhoisGenie.NET.Tests
             Assert.AreEqual("CANADA", ipResponse.Customer.iso3166_1.Name.Value);
             Assert.AreEqual("Montreal", ipResponse.Customer.City.Value);
             Assert.AreEqual("QC", ipResponse.Customer.iso3166_2.Value);
-            Assert.AreEqual("H2X 3W4", ipResponse.Customer.PostalCode.Value);
+            Assert.AreEqual("H2V 1C4", ipResponse.Customer.PostalCode.Value);
         }
 
         [TestMethod]

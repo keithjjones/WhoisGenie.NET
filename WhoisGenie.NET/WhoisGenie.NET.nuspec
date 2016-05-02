@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>WhoisGenie.NET</id>
-    <version>20160120.2</version>
+    <version>20160502.1</version>
     <title>WhoisGenie.NET</title>
     <authors>Keith J. Jones</authors>
     <owners>Keith J. Jones</owners>
@@ -14,16 +14,17 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This C# library provides access to ARIN RESTful Whois lookups, plus recursive raw lookups.</description>
     <releaseNotes>
-	20160120.2	Updated packages providing better handling of bad network connections for recursive whois.
-	20160120.1	Updated assembly versions.  Refactored.
-	20160119.3	Updated packages.  Enabled IntelliSense XML output.
-	20160119.2	Added more IntelliSense information.  Updated packages.
-	20160119.1	Added IntelliSense information.
-	20160118.3	Updated packages.
-	20160118.2	Changed license link.
-	20160118.1	First version of this package.
-	Package created on Jan 18, 2016, Iteration #1
-	</releaseNotes>
+      20160502.1	Squashed minor bug in responded servers output.
+      20160120.2	Updated packages providing better handling of bad network connections for recursive whois.
+      20160120.1	Updated assembly versions.  Refactored.
+      20160119.3	Updated packages.  Enabled IntelliSense XML output.
+      20160119.2	Added more IntelliSense information.  Updated packages.
+      20160119.1	Added IntelliSense information.
+      20160118.3	Updated packages.
+      20160118.2	Changed license link.
+      20160118.1	First version of this package.
+      Package created on Jan 18, 2016, Iteration #1
+    </releaseNotes>
     <copyright>Copyright 2016, Keith J. Jones</copyright>
     <tags>whois genie arin recursive</tags>
   </metadata>
